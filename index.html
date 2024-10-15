@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박민의 랜딩페이지</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function(){
+      $("#wrap .up").click(function(e){
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="intro" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
+      <div class="txt">
+        <h1>안녕하세요,<br><strong><span>박민</span>입니다.</strong></h1>
+        <h2>제 포트폴리오를 소개합니다.</h2>
+        <div class="emoji">
+          <h4><img src="images/emoji1.png" alt="emoji1"></h4>
+          <h4><img src="images/emoji2.png" alt="emoji2"></h4>
+        </div>
+      </div>
+      <h3>PORT<span>FOLIO</span></h3>
+    </div>
+    <div class="profile" data-aos="fade-up" data-aos-duration="2000">
+      <h1><span>저</span>를 소개합니다.</h1>
+      <div class="sub">
+        <div class="box box1">
+          <p><img src="images/intro.png" alt="intro"></p>
+          <span><img src="images/hamburger.jfif" alt="hamburger"></span>
+        </div>
+        <div class="box box2">
+          <h1><img src="images/CSS3.png" alt="css"></h1>
+          <h2><img src="images/Html5.png" alt="html"></h2>
+          <h3><img src="images/JavaScript.png" alt="js"></h3>
+          <h4><img src="images/AdobePhotoshop.png" alt="Photoshop"></h4>
+          <h5><img src="images/AdobeIllustrator.png" alt="AdobeIllustrator"></h5>
+          <h6><img src="images/Figma.png" alt="figma"></h6>
+          <!-- 요기다가 기술들 넣고 -->
+        </div>
+        <div class="box box3">
+          <a href="sub.html" target="_new">
+            <h1>더 많은 정보가<br>필요하다면?</h1>
+            <p>이력서 보기</p>
+            <span><img src="images/rightarrow.svg" alt="rightarrow"></span>
+          </a>
+          <!-- 누르면 이력서 이동 -->
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="page first" data-aos="fade-up" data-aos-duration="2000">
+        <div class="left">
+          <p><img src="images/gongjindanImac.png" alt="gongjindanImac"></p>
+          <p><img src="images/gongjindanIpad.png" alt="gongjindanIpad"></p>
+          <p><img src="images/gongjindanIphone.png" alt="gongjindanIphone"></p>
+        </div>
+        <div class="right">
+          <div class="txt">
+            <h1>월간 공진단</h1>
+            <h2>개인 작업 100%</h2>
+            <h2>반응형 웹페이지 구현</h2>
+          </div>
+          <div class="btn">
+            <p>
+              <a href="gongjindan/"  target="_new">VIEW MORE</a>
+              <a href="https://webzine.kotpa.org/202301-vol54"  target="_new">ORIGINAL</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page second" data-aos="fade-up" data-aos-duration="2000">
+        <div class="left">
+          <p><img src="images/hanwhaImac.png" alt="hanwhaImac"></p>
+        </div>
+        <div class="right">
+          <div class="txt">
+            <h1>한화이글스</h1>
+            <h2>개인 작업 100%</h2>
+            <h2>서브 페이지 -<br>EAGLES > 구단소개</h2>
+          </div>
+          <div class="btn">
+            <p>
+              <a href="hanwha/" target="_new">VIEW MORE</a>
+              <a href="https://www.hanwhaeagles.co.kr/index.do" target="_new">ORIGINAL</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page third" data-aos="fade-up" data-aos-duration="2000">
+        <div class="left">
+          <p><img src="images/HLLImac.png" alt="HLLImac"></p>
+        </div>
+        <div class="right">
+          <div class="txt">
+            <h1>HLL 중앙</h1>
+            <h2>개인 작업 100%</h2>
+            <h2>서브 페이지 -<br>COMPANY</h2>
+          </div>
+          <div class="btn">
+            <p>
+              <a href="HLL/" target="_new">VIEW MORE</a>
+              <a href="https://www.hll.kr/" target="_new">ORIGINAL</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="up">
+      <a href="#"><img src="images/arrow.svg" alt="arrow"></a>
+    </div>
+  </div>
+  <script>
+    AOS.init({
+      easing:"ease",
+			offset: 0,
+    });
+  </script>
+</body>
+</html>
